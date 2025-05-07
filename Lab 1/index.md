@@ -16,3 +16,11 @@ Before you begin, ensure the following:
 
 - You have an [AWS account](https://aws.amazon.com/).
 
+## Steps
+
+To launch an EC2 instance, log in to the AWS Management Console and click on “Launch Instance” under the EC2 dashboard.
+
+![AWS_page for instance launch](Lab 1/Asset/Images/Lab pic 1-launch instant.jpg)
+
+
+
