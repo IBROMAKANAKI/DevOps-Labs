@@ -135,62 +135,33 @@ Before you begin, ensure the following:
 
 - Click on **View instances**
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <style>
-    .container {
-      display: flex;
-      gap: 10px;
-      align-items: flex-start;
-    }
+<p>Click on View instances</p>
 
-    .step {
-      text-align: center;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 1s ease, transform 1s ease;
-    }
-
-    .step.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
-</head>
-<body>
-
-  <!-- Image Animation Section -->
-  <div class="container">
-    <div class="step" id="step1">
-      <img src="Asset/Images/setting up.jpg" alt="Setting Up" width="400"/>
-      <p>⬅️ Step 2: Setting Up</p>
-    </div>
-    <div class="step" id="step2">
-      <img src="Asset/Images/Lunch success.jpg" alt="Successful Confirmation launch" width="400"/>
-      <p>⬅️ Step 3: Successful Confirmation launch</p>
-    </div>
-    <div class="step" id="step3">
-      <img src="Asset/Images/Instance working.jpg" alt="View Instance" width="400"/>
-      <p>⬅️ Step 4: View Instance</p>
-    </div>
+<div class="container" style="display: flex; gap: 10px; align-items: flex-start;">
+  <div class="step visible" id="step1" style="text-align: center;">
+    <img src="Asset/Images/setting up.jpg" alt="Setting Up" width="400" style="cursor: pointer;" onclick="showNext('step2')"/>
+    <p>⬅️ Step 2: Setting Up</p>
   </div>
 
-  <script>
-    // Animate each step in order with a delay
-    window.addEventListener("load", () => {
-      const steps = [document.getElementById("step1"), document.getElementById("step2"), document.getElementById("step3")];
-      steps.forEach((el, index) => {
-        setTimeout(() => {
-          el.classList.add("visible");
-        }, index * 1000); // 1s delay between each
-      });
-    });
-  </script>
-</body>
-</html>
+  <div class="step" id="step2" style="text-align: center; display: none;">
+    <img src="Asset/Images/Lunch success.jpg" alt="Successful Confirmation launch" width="400" style="cursor: pointer;" onclick="showNext('step3')"/>
+    <p>⬅️ Step 3: Successful Confirmation launch</p>
+  </div>
 
+  <div class="step" id="step3" style="text-align: center; display: none;">
+    <img src="Asset/Images/Instance working.jpg" alt="View Instance" width="400"/>
+    <p>⬅️ Step 4: View Instance</p>
+  </div>
+</div>
+
+<script>
+  function showNext(stepId) {
+    const step = document.getElementById(stepId);
+    if (step) {
+      step.style.display = "block";
+    }
+  }
+</script>
 
   
 
