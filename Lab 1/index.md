@@ -294,6 +294,7 @@ cd Downloads
      ```Result
       -r-------- 1 hp 197121 1678 May 13 01:39 EC2KEYS.pem
      ```
+
      🔐 Note: SSH will not connect if your key file is publicly viewable.
 
 - Connect to the EC2 Instance
@@ -301,7 +302,8 @@ cd Downloads
         ```bash
         ssh -i "EC2KEYS.pem" ubuntu@ec2-54-160-226-32.compute-1.amazonaws.com
         ```
-        When prompted: Are you sure you want to continue connecting (yes/no)? - type (yes)
+
+         When prompted: Are you sure you want to continue connecting (yes/no)? - type (yes)
   
 - Rename the EC2 Server to “Jenkins”
      After successfully connecting to the server, you can rename it for clarity:
@@ -309,14 +311,17 @@ cd Downloads
       ```bash
        sudo hostnamectl set-hostname jenkins
       ```
+  
 - Reboot the Server to Apply the Change & Reconnect using the SSH command:
 
       ![hostname change and rebbot](Asset/Images/Reboot.jpg)
 
        Your terminal should now show:
+
             ```bash
             ubuntu@jenkins:~$
             ```
+
             ✅ You’ve successfully connected and renamed your EC2 instance
 
 ![IP to Jenkins](Asset/Images/Ip to jenkins.jpg)
