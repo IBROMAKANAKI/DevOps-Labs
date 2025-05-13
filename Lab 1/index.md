@@ -135,33 +135,51 @@ Before you begin, ensure the following:
 
 - Click on **View instances**
 
-<p>Click on View instances</p>
+<p>Click Image to view more images</p>
 
 <div class="container" style="display: flex; gap: 10px; align-items: flex-start;">
   <div class="step visible" id="step1" style="text-align: center;">
-    <img src="Asset/Images/setting up.jpg" alt="Setting Up" width="400" style="cursor: pointer;" onclick="showNext('step2')"/>
+    <img src="Asset/Images/setting up.jpg" alt="Setting Up" width="400" style="cursor: pointer; transition: transform 0.6s;" onclick="rotateAndShow('step2', this)"/>
     <p>⬅️ Step 2: Setting Up</p>
   </div>
 
   <div class="step" id="step2" style="text-align: center; display: none;">
-    <img src="Asset/Images/Lunch success.jpg" alt="Successful Confirmation launch" width="400" style="cursor: pointer;" onclick="showNext('step3')"/>
+    <img src="Asset/Images/Lunch success.jpg" alt="Successful Confirmation launch" width="400" style="cursor: pointer; transition: transform 0.6s;" onclick="rotateAndShow('step3', this)"/>
     <p>⬅️ Step 3: Successful Confirmation launch</p>
   </div>
 
   <div class="step" id="step3" style="text-align: center; display: none;">
-    <img src="Asset/Images/Instance working.jpg" alt="View Instance" width="400"/>
+    <img src="Asset/Images/Instance working.jpg" alt="View Instance" width="400" style="transition: transform 0.6s;"/>
     <p>⬅️ Step 4: View Instance</p>
   </div>
 </div>
 
+<!-- Notification placeholder -->
+<p id="notify" style="font-weight: bold; color: green; margin-top: 20px;"></p>
+
 <script>
-  function showNext(stepId) {
-    const step = document.getElementById(stepId);
-    if (step) {
-      step.style.display = "block";
-    }
+  function rotateAndShow(nextId, currentImg) {
+    // Add rotation effect
+    currentImg.style.transform = "rotateY(180deg)";
+
+    // Delay showing next step
+    setTimeout(() => {
+      const nextStep = document.getElementById(nextId);
+      if (nextStep) {
+        nextStep.style.display = "block";
+      }
+
+      // Reset rotation for current image so it can rotate again if needed
+      currentImg.style.transform = "none";
+
+      // If it's the last image
+      if (nextId === 'step3') {
+        document.getElementById('notify').innerText = "✅ Click 'View Instances' to continue";
+      }
+    }, 600); // match transition duration
   }
 </script>
+
 
   
 
