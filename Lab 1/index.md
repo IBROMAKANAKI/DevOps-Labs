@@ -180,6 +180,30 @@ Before you begin, ensure the following:
   }
 </script>
 
+13 🔧 Renaming the EC2 Instance to **Jenkins** or **Tomcat**
+
+### Steps:
+
+- Hover your mouse over the **EC2 instance name** in the **Instances** list.
+- A small **pencil icon** (✏️) will appear next to the name.
+- Click the **pencil icon**.
+- Type the new name, such as **Jenkins** or **Tomcat**.
+- Press **Enter** or click **Save** to confirm the change.
+
+<div style="display: flex; gap: 10px; align-items: flex-start;">
+  <div style="text-align: center;">
+    <img src="Asset/Images/Edit name.jpg" alt="Edit name" width="400"/>
+    <p>⬅️ Step 2: Edit name</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="Asset/Images/Changed name.jpg" alt="Changed name" width="400"/>
+    <p>⬅️ Step 3: Changed name</p>
+  </div>
+</div>
+
+<style> .zoom-container { display: flex; gap: 10px; align-items: flex-start; } .zoom-image { transition: transform 0.3s ease; cursor: zoom-in; } .zoom-image:hover { transform: scale(1.5); z-index: 10; } </style> <div class="zoom-container"> <div style="text-align: center;"> <img class="zoom-image" src="Asset/Images/Edit name.jpg" alt="Edit name" width="400"/> <p>⬅️ Step 2: Edit name</p> </div> <div style="text-align: center;"> <img class="zoom-image" src="Asset/Images/Changed name.jpg" alt="Changed name" width="400"/> <p>⬅️ Step 3: Changed name</p> </div> </div>
+
+
 
   
 
