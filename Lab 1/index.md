@@ -1,4 +1,4 @@
-# DevOps Lab 1 : Provision Ubuntu 22.0.4 EC2 Instance | How to create EC2 instance in AWS console | Launch Ubuntu 22.0.4 instance in AWS
+# <div style="text-align:center; background-color:#4CAF50; color:white; padding:10px;">DevOps Lab 1 : Provision Ubuntu 22.0.4 EC2 Instance | How to create EC2 instance in AWS console | Launch Ubuntu 22.0.4 instance in AWS</div>
 
 ## Introduction4
 
