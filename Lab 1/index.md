@@ -225,7 +225,7 @@ Before you begin, ensure the following:
 <style> .zoom-container { display: flex; gap: 10px; align-items: flex-start; } .zoom-image { transition: transform 0.3s ease; cursor: zoom-in; } .zoom-image:hover { transform: scale(1.5); z-index: 10; } </style> <div class="zoom-container"> <div style="text-align: center;"> <img class="zoom-image" src="Asset/Images/Edit name.jpg" alt="Edit name" width="400"/> <p>⬅️ Step 1: Edit name</p> </div> <div style="text-align: center;"> <img class="zoom-image" src="Asset/Images/Changed name.jpg" alt="Changed name" width="400"/> <p>⬅️ Step 2: Changed name</p> </div> </div>
 
 
-## <p align="center"><strong>🔌 How to Connect EC2 Instance Using Git Bash (Windows) or iTerm2 (macOS)</strong></p>
+## **🔌 How to Connect EC2 Instance Using Git Bash (Windows) or iTerm2 (macOS)**
 
 After launching your EC2 instance, you’ll need to connect to it via SSH to start setting up Jenkins or Tomcat. Below are step-by-step instructions.
 
@@ -293,17 +293,15 @@ cd Downloads
   ```
      ```Result
       -r-------- 1 hp 197121 1678 May 13 01:39 EC2KEYS.pem
-
-      🔐 Note: SSH will not connect if your key file is publicly viewable.
      ```
+     🔐 Note: SSH will not connect if your key file is publicly viewable.
 
 - Connect to the EC2 Instance
     Use the public DNS from your instance in the following command:
         ```bash
         ssh -i "EC2KEYS.pem" ubuntu@ec2-54-160-226-32.compute-1.amazonaws.com
-
-        When prompted: Are you sure you want to continue connecting (yes/no)? - type (yes)
         ```
+        When prompted: Are you sure you want to continue connecting (yes/no)? - type (yes)
   
 - Rename the EC2 Server to “Jenkins”
      After successfully connecting to the server, you can rename it for clarity:
@@ -321,7 +319,7 @@ cd Downloads
             ```
             ✅ You’ve successfully connected and renamed your EC2 instance
 
-                    ![IP to Jenkins](Asset/Images/Ip to jenkins.jpg)
+![IP to Jenkins](Asset/Images/Ip to jenkins.jpg)
         
       
 
