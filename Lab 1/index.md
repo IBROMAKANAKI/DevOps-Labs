@@ -35,19 +35,54 @@ Before you begin, ensure the following:
 
 ![AWS page for instance launch](Asset/Images/Lab pic 1-launch instant.jpg)
 
-2.  **Enter Name as EC2** and enter 2 as number of instances (one for Jenkins and another for Tomcat)
+2.  **Enter Name as EC2 Instance** and enter 2 as number of instances (one for Jenkins and another for Tomcat)
+
+<div style="display: flex; gap: 10px; align-items: flex-start;">
+  <div style="text-align: center;">
+    <img src="Asset/Images/name tag.jpg" alt="Write instance name - EC2 Instance" width="400"/>
+    <p>⬅️ Step 2: Search for EC2</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="Asset/Images/Ec2 setup 1.jpg" alt="Setup EC2 1" width="400"/>
+    <p>⬅️ Step 3: Click “Launch Instance”</p>
+  </div>
+</div>
 
 3. Select **Ubuntu**
 
+![Selecting Ubuntu server](Asset/Images/select Ubuntu.jpg)
+
 4. Choose **Ubuntu server 22.0.4** as AMI
+
+![Using Ubuntu server 22.0.4](Asset/Images/Ubuntu 22.04 Server.jpg)
 
 5. Enter **t2.small** as instance type
 
+![Using t2.micro](Asset/Images/t2 micro.jpg)
+
 6. Click on **Create new Key Pair**
+
+<div style="display: flex; gap: 10px; align-items: flex-start;">
+  <div style="text-align: center;">
+    <img src="Asset/Images/set up 2.jpg" alt="Create a new key" width="400"/>
+    <p>⬅️ Step 2: Search for EC2</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="Asset/Images/Create Key pairs.jpg" alt="Name Key and create" width="400"/>
+    <p>⬅️ Step 3: Click “Launch Instance”</p>
+  </div>
+  <div style="text-align: center;">
+    <img src="Asset/Images/set up key.jpg" alt="Key pair login" width="400"/>
+    <p>⬅️ Step 4: Choose AMI</p>
+  </div>
+</div>
+
 
 7. Choose the existing key pair if you have one, otherwise create new one, give some name as myJenkinsKey. Make sure you download the key in your local machine. Please do NOT give space or any character while naming the key.
 
-8. Under Network settings, **Click Edit**
+![Choose the key pair](Asset/Images/Chose key pair.jpg)
+
+10. Under Network settings, **Click Edit**
 
 - Add port range as **8080** and select **AnyWhere** as Source Type, that should enter **0.0.0.0/0** as Source
   
