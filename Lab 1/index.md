@@ -150,46 +150,47 @@ Before you begin, ensure the following:
       text-align: center;
       opacity: 0;
       transform: translateY(20px);
-      animation: fadeInUp 1s forwards;
+      transition: opacity 1s ease, transform 1s ease;
     }
 
-    .step:nth-child(1) {
-      animation-delay: 0s;
-    }
-
-    .step:nth-child(2) {
-      animation-delay: 1s;
-    }
-
-    .step:nth-child(3) {
-      animation-delay: 2s;
-    }
-
-    @keyframes fadeInUp {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .step.visible {
+      opacity: 1;
+      transform: translateY(0);
     }
   </style>
 </head>
 <body>
+
+  <!-- Image Animation Section -->
   <div class="container">
-    <div class="step">
+    <div class="step" id="step1">
       <img src="Asset/Images/setting up.jpg" alt="Setting Up" width="400"/>
       <p>⬅️ Step 2: Setting Up</p>
     </div>
-    <div class="step">
+    <div class="step" id="step2">
       <img src="Asset/Images/Lunch success.jpg" alt="Successful Confirmation launch" width="400"/>
       <p>⬅️ Step 3: Successful Confirmation launch</p>
     </div>
-    <div class="step">
+    <div class="step" id="step3">
       <img src="Asset/Images/Instance working.jpg" alt="View Instance" width="400"/>
       <p>⬅️ Step 4: View Instance</p>
     </div>
   </div>
+
+  <script>
+    // Animate each step in order with a delay
+    window.addEventListener("load", () => {
+      const steps = [document.getElementById("step1"), document.getElementById("step2"), document.getElementById("step3")];
+      steps.forEach((el, index) => {
+        setTimeout(() => {
+          el.classList.add("visible");
+        }, index * 1000); // 1s delay between each
+      });
+    });
+  </script>
 </body>
 </html>
+
 
   
 
