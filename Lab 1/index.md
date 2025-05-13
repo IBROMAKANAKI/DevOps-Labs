@@ -137,19 +137,52 @@ Before you begin, ensure the following:
 
 <p>Click Image to view more images</p>
 
+<style>
+  .zoom-on-hover {
+    cursor: pointer;
+    transition: transform 0.4s ease;
+  }
+
+  .zoom-on-hover:hover {
+    transform: scale(1.2);
+    z-index: 5;
+  }
+
+  .step {
+    text-align: center;
+  }
+</style>
+
 <div class="container" style="display: flex; gap: 10px; align-items: flex-start;">
-  <div class="step visible" id="step1" style="text-align: center;">
-    <img src="Asset/Images/setting up.jpg" alt="Setting Up" width="400" style="cursor: pointer; transition: transform 0.6s;" onclick="rotateAndShow('step2', this)"/>
+  <div class="step visible" id="step1">
+    <img
+      src="Asset/Images/setting up.jpg"
+      alt="Setting Up"
+      width="400"
+      class="zoom-on-hover"
+      onclick="rotateAndShow('step2', this)"
+    />
     <p>⬅️ Step 2: Setting Up</p>
   </div>
 
-  <div class="step" id="step2" style="text-align: center; display: none;">
-    <img src="Asset/Images/Lunch success.jpg" alt="Successful Confirmation launch" width="400" style="cursor: pointer; transition: transform 0.6s;" onclick="rotateAndShow('step3', this)"/>
+  <div class="step" id="step2" style="display: none;">
+    <img
+      src="Asset/Images/Lunch success.jpg"
+      alt="Successful Confirmation launch"
+      width="400"
+      class="zoom-on-hover"
+      onclick="rotateAndShow('step3', this)"
+    />
     <p>⬅️ Step 3: Successful Confirmation launch</p>
   </div>
 
-  <div class="step" id="step3" style="text-align: center; display: none;">
-    <img src="Asset/Images/Instance working.jpg" alt="View Instance" width="400" style="transition: transform 0.6s;"/>
+  <div class="step" id="step3" style="display: none;">
+    <img
+      src="Asset/Images/Instance working.jpg"
+      alt="View Instance"
+      width="400"
+      class="zoom-on-hover"
+    />
     <p>⬅️ Step 4: View Instance</p>
   </div>
 </div>
@@ -159,26 +192,25 @@ Before you begin, ensure the following:
 
 <script>
   function rotateAndShow(nextId, currentImg) {
-    // Add rotation effect
-    currentImg.style.transform = "rotateY(180deg)";
+    // Add temporary rotation
+    currentImg.style.transform = "rotateY(180deg) scale(1.2)";
 
-    // Delay showing next step
     setTimeout(() => {
       const nextStep = document.getElementById(nextId);
       if (nextStep) {
         nextStep.style.display = "block";
       }
 
-      // Reset rotation for current image so it can rotate again if needed
+      // Reset transform to allow repeated animations
       currentImg.style.transform = "none";
 
-      // If it's the last image
       if (nextId === 'step3') {
         document.getElementById('notify').innerText = "✅ Click 'View Instances' to continue";
       }
-    }, 600); // match transition duration
+    }, 600);
   }
 </script>
+
 
 13 🔧 Renaming the EC2 Instance to **Jenkins** or **Tomcat**
 
@@ -190,16 +222,6 @@ Before you begin, ensure the following:
 - Type the new name, such as **Jenkins** or **Tomcat**.
 - Press **Enter** or click **Save** to confirm the change.
 
-<div style="display: flex; gap: 10px; align-items: flex-start;">
-  <div style="text-align: center;">
-    <img src="Asset/Images/Edit name.jpg" alt="Edit name" width="400"/>
-    <p>⬅️ Step 2: Edit name</p>
-  </div>
-  <div style="text-align: center;">
-    <img src="Asset/Images/Changed name.jpg" alt="Changed name" width="400"/>
-    <p>⬅️ Step 3: Changed name</p>
-  </div>
-</div>
 
 <style> .zoom-container { display: flex; gap: 10px; align-items: flex-start; } .zoom-image { transition: transform 0.3s ease; cursor: zoom-in; } .zoom-image:hover { transform: scale(1.5); z-index: 10; } </style> <div class="zoom-container"> <div style="text-align: center;"> <img class="zoom-image" src="Asset/Images/Edit name.jpg" alt="Edit name" width="400"/> <p>⬅️ Step 2: Edit name</p> </div> <div style="text-align: center;"> <img class="zoom-image" src="Asset/Images/Changed name.jpg" alt="Changed name" width="400"/> <p>⬅️ Step 3: Changed name</p> </div> </div>
 
