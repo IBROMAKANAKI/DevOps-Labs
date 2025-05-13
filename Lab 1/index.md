@@ -177,6 +177,19 @@ Before you begin, ensure the following:
   </div>
 </div>
 
+### Step 1: Setting Up
+
+[![Setting Up](Asset/Images/setting%20up.jpg)](Asset/Images/setting%20up.jpg)
+
+### Step 2: Successful Confirmation Launch
+
+[![Launch Success](Asset/Images/Lunch%20success.jpg)](Asset/Images/Lunch%20success.jpg)
+
+### Step 3: View Instance
+
+[![View Instance](Asset/Images/Instance%20working.jpg)](Asset/Images/Instance%20working.jpg)
+
+
 
 13 🔧 Renaming the EC2 Instance to **Jenkins** or **Tomcat**
 
