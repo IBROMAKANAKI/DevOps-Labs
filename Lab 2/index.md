@@ -33,14 +33,64 @@ Jenkins is an open source continuous integration/continuous delivery and deploym
 
     ii) You will see an example SSH command provided by AWS (e.g., ssh -i "your-key.pem" ubuntu@ec2-XX-XX-XX-XX.compute-1.amazonaws.com).
 
- | Connect to Instance | ➡️ | Terminal Connected |
-|---------------------|----|--------------------|
-| ![Connect](Assets/Images/Connect%20instance.jpg) |  | ![Terminal](Assets/Images/Terminal%20connect.jpg) |
-
 - Prepare to Connect from Your Local Machine
 
    i) Open your terminal or command prompt on your local machine.
 
   ii) Change directory to where your .pem key file is downloaded.
+
+  <style>
+  .zoom-gallery {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .zoom-image {
+    width: 300px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+  .zoom-image:hover {
+    transform: scale(1.05);
+  }
+
+  /* Lightbox effect */
+  #lightbox {
+    position: fixed;
+    display: none;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  #lightbox img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+  }
+</style>
+
+<div class="zoom-gallery">
+  <img src="Assets/Images/Connect%20instance.jpg" alt="Connect" class="zoom-image" onclick="showLightbox(this.src)" />
+  <span style="font-size: 2rem;">➡️</span>
+  <img src="Assets/Images/Terminal%20connect.jpg" alt="Terminal" class="zoom-image" onclick="showLightbox(this.src)" />
+</div>
+
+<div id="lightbox" onclick="this.style.display='none'">
+  <img src="" alt="Zoomed" id="zoomedImg" />
+</div>
+
+<script>
+  function showLightbox(src) {
+    document.getElementById('zoomedImg').src = src;
+    document.getElementById('lightbox').style.display = 'flex';
+  }
+</script>
 
 
