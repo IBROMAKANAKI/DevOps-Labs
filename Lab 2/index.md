@@ -33,6 +33,10 @@ Jenkins is an open source continuous integration/continuous delivery and deploym
 
     ii) You will see an example SSH command provided by AWS (e.g., ssh -i "your-key.pem" ubuntu@ec2-XX-XX-XX-XX.compute-1.amazonaws.com).
 
+ | Connect to Instance | ➡️ | Terminal Connected |
+|---------------------|----|--------------------|
+| ![Connect](Assets/Images/Connect%20instance.jpg) |  | ![Terminal](Assets/Images/Terminal%20connect.jpg) |
+
 - Prepare to Connect from Your Local Machine
 
    i) Open your terminal or command prompt on your local machine.
