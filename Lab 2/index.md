@@ -93,4 +93,28 @@ Jenkins is an open source continuous integration/continuous delivery and deploym
   }
 </script>
 
+## 2. 🛠️ Update the System
+
+Before installing any packages, update the system’s package list to get the latest versions:
+
+```bash
+sudo apt update
+```
+![Update Package](Assets/Images/Update package.jpg)
+
+## 3. ☕ Install Java 17
+
+To install Java 17 on your Ubuntu system, run the following command:
+
+```bash
+sudo apt install openjdk-17-jdk -y
+```
+- Verify Java Version
+  
+```bash
+java -version
+```
+![Java version check](Assets/Images/Java version.jpg)
+
+
 
