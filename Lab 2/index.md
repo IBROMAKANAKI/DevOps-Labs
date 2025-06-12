@@ -284,3 +284,62 @@ sudo cat /var/lib/jenkins/secrets/initialAdminPassword
 
 
 **Kudos!!!. Jenkins has been set up successfully by You.**
+
+# Install Tomcat 9 on Ubuntu 22.0.4 | Setup Tomcat 9 on Ubuntu 22.0.4 in AWS EC2 | Setup Tomcat on Ubuntu
+
+Apache Tomcat, often referred to as Tomcat, is an open-source implementation of the Java Servlet, JavaServer Pages (JSP), and Java Expression Language (EL) technologies. It serves as a web server and a servlet container, providing a platform for deploying and executing Java web applications. Tomcat is widely used in the Java development community for hosting Java-based web applications and supporting the execution of Java servlets and JSP pages.
+
+Key Features and Components:
+
+- Servlet Container:
+  Tomcat functions as a servlet container, which means it implements the Java Servlet Specification. Servlets are Java classes that handle requests and generate responses for web applications.
+
+-JSP Support:
+ Tomcat supports JavaServer Pages (JSP), a technology that allows developers to embed Java code in HTML pages. JSP pages are compiled into servlets and executed by the servlet container.
+
+- Connectors:
+  Tomcat includes connectors that enable communication with different web servers, such as Apache HTTP Server or Microsoft IIS. The connectors facilitate integration with existing infrastructure.
+
+- HTTP Server:
+  While Tomcat is primarily known as a servlet container, it also includes a built-in HTTP server. This allows Tomcat to serve static content and handle HTTP requests directly.
+
+- Manager Applications:
+  Tomcat provides web-based management applications, such as the Tomcat Manager and Host Manager, which allow administrators to deploy, un-deploy, and manage web applications.
+
+Tomcat Usage:
+
+Web Application Deployment:
+
+Tomcat is used to deploy and run Java web applications. Developers package their applications as WAR (Web Application Archive) files and deploy them to Tomcat.
+
+Development and Testing:
+
+Tomcat is commonly used during the development and testing phases of Java web applications. It provides a lightweight environment for testing servlets and JSP pages.
+
+
+Integration with Other Technologies:
+
+Tomcat is often integrated with other technologies, such as Apache HTTP Server or reverse proxy servers, to enhance performance and scalability.
+
+Embedded Usage:
+
+Tomcat can be embedded in Java applications, allowing developers to run a servlet container within their application.
+
+## Pre-requisites:
+Make sure you create brand new **EC2 instance** first for setting up Tomcat.
+Also open **port 8080** in security firewall rules for EC2 instance in AWS
+
+## Please follow below steps to install Tomcat 9 on Ubuntu 22.0.4.
+
+**Change Host Name to Tomcat**
+```bash
+sudo hostnamectl set-hostname Tomcat
+```
+**Update to Latest packages**
+```bash
+sudo apt update
+```
+**Install Tomcat9**
+```bash
+sudo apt-get install tomcat9 tomcat9-docs tomcat9-admin -y
+```
