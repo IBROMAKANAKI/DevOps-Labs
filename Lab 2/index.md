@@ -417,4 +417,6 @@ sudo systemctl status tomcat9
    **http://change to Ec2_public_dns_name:8080**
   
 ![Tomcat works](Assets/Images/Tomcat works.jpg)
-  
+
+                                                      **That's it. You have setup Tomcat successfully!!**
+
