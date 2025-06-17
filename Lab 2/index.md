@@ -343,3 +343,78 @@ sudo apt update
 ```bash
 sudo apt-get install tomcat9 tomcat9-docs tomcat9-admin -y
 ```
+![Tomcat Install](Assets/Images/Tomcat install.jpg)
+
+Setup an user in tomcat 
+Open the tomcat-users.xml file by executing below command
+sudo vi /var/lib/tomcat9/conf/tomcat-users.xml
+
+**Perform below command for setting up tomcat admin app**
+```bash
+sudo cp -r /usr/share/tomcat9-admin/* /var/lib/tomcat9/webapps/ -v
+```
+**Setup an user in tomcat**
+- Open the tomcat-users.xml file by executing below command
+```bash
+sudo vi /var/lib/tomcat9/conf/tomcat-users.xml
+```
+
+**You need to edit the file**
+- vi or sudo vi to open a file editor and then press i or insert
+- make the changes (avoid using mouse)
+- press escape button
+- :wq! (saving and exiting the file after changes)
+- enter
+
+Add tomcat user and assign to manager-script role.
+Scroll down all the way to the end of the file,
+Add the below lines in second last line above (above </tomcat-users>)
+
+```bash
+<role rolename="manager-script"/>
+<user username="tomcat" password="password" roles="manager-script"/>
+```
+<style>
+.image-row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-row img {
+  width: 200px;
+  height: auto;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.image-row img:hover {
+  transform: scale(1.2);
+}
+</style>
+
+<div class="image-row">
+  <img src="Assets/Images/Insert 1.jpg" alt="Insert tomcat login">
+  <img src="Assets/Images/insect 2.jpg" alt="Insert tomcat">
+</div>
+
+**Now restart tomcat to take the changes in effect**
+
+```bash
+sudo systemctl restart tomcat9
+```
+**Verify if tomcat9 is working fine**
+
+```bash
+sudo systemctl status tomcat9
+``` 
+![Active tomcat](Assets/Images/Active tomcat.jpg)
+
+- Now press q for quitting from that window.
+  
+- Now open the browser to access Tomcat, enter
+   **http://change to Ec2_public_dns_name:8080**
+  
+![Tomcat works](Assets/Images/Tomcat works.jpg)
+  
