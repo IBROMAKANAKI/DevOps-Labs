@@ -1,2 +1,10 @@
 # Lab Exercise 03 - Create Java Web App using Maven & Setup Java WebApp in GitHub Repo
 
+**How to setup SSH keys | How to setup Repo in GitHub and Setup Java Project in GitHub | How to add a Java Web App in GitHub using Maven**
+
+GitHub is one of the popular git-based version control systems. GitHub is very good example for Software-as-a-service, hosted on cloud for storing and sharing code. 
+
+- We will learn how to create a Java Project using Maven and push Java Project into GitHub from Ec2 instance. 
+- Let us learn how to create SSH keys and securely connect to gitHub from EC2 instance. 
+
+
