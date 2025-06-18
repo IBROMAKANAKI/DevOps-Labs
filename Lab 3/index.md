@@ -5,6 +5,10 @@
 GitHub is one of the popular git-based version control systems. GitHub is very good example for Software-as-a-service, hosted on cloud for storing and sharing code. 
 
 - We will learn how to create a Java Project using Maven and push Java Project into GitHub from Ec2 instance. 
-- Let us learn how to create SSH keys and securely connect to gitHub from EC2 instance. 
+- Let us learn how to create SSH keys and securely connect to gitHub from EC2 instance.
 
+**Pre-requisites:**
+- If you don't have an GitHub account, you need to create an account in github.com
+
+![setup ssh keys into github aand setup java webapp](Assets/Images/setup ssh keys into github aand setup java webapp.png)
 
