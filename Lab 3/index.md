@@ -27,7 +27,10 @@ If you don't have an GitHub account, you need to create an account in github.com
 
 - Login to your Jenkins EC2 instance using Git bash. (**make sure you are connected to Jenkins instance**)
   **make sure you are connected to EC2 instance by ssh url.** 
-- **Type ssh-keygen** (and then **click on enter four button times**, (**do not give any password**)). 
+- **Type ssh-keygen** (and then **click on enter four button times**, (**do not give any password**)).
+- 
+![SSH-KEYGEN](Assets/Images/ssh-keygen.jpg)
+
 - ssh-keygen command will generate two keys - public keys and private keys. (**We need to upload only the public keys into GitHub**).
 - If you already have keys generated, you can use the existing key, you don't have to overwrite the existing key.
 - copy the content of public key by executing below command in Git bash and type the code below to see the key(password)
@@ -35,4 +38,4 @@ If you don't have an GitHub account, you need to create an account in github.com
   ```bash
   sudo cat ~/.ssh/id_rsa.pub
   ```
-
+![KEYGEN](Assets/Images/key.jpg)
