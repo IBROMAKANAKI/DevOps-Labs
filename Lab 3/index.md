@@ -44,12 +44,39 @@ If you don't have an GitHub account, you need to create an account in github.com
 **Go to GitHub, click on Settings.**
 
 <p align="center">
-  <strong>Step 1: Open Settings</strong><br>
+  <strong> 1: Open Settings</strong><br>
   <img src="Assets/Images/settings.jpg" alt="Settings" width="600"><br>
   ⬇️
 </p>
 
 <p align="center">
-  <strong>Step 2: Set up SSH</strong><br>
+  <strong> 2: Set up SSH</strong><br>
   <img src="Assets/Images/set-ssh.jpg" alt="Set-ssh" width="600">
 </p>
+
+**Copy SSH keys Key section and then click on Add SSH key.**
+
+<p align="center">
+  <strong>Step 1: Create New SSH Key</strong><br>
+  <a href="Assets/Images/newssh-key.jpg" target="_blank">
+    <img src="Assets/Images/newssh-key.jpg" alt="Create-key" width="600" style="transition: transform .2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+  </a><br>
+  ⬇️
+</p>
+
+<p align="center">
+  <strong>Step 2: Paste SSH Key</strong><br>
+  <a href="Assets/Images/Paste-key.jpg" target="_blank">
+    <img src="Assets/Images/Paste-key.jpg" alt="Paste-key" width="600" style="transition: transform .2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+  </a><br>
+  ⬇️
+</p>
+
+<p align="center">
+  <strong>Step 3: Key Successfully Set</strong><br>
+  <a href="Assets/Images/Key-set.jpg" target="_blank">
+    <img src="Assets/Images/Key-set.jpg" alt="key-set" width="600" style="transition: transform .2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+  </a>
+</p>
+
+
