@@ -95,3 +95,15 @@ git clone <paste the ssh url >
 
 ![git-clone](Assets/Images/git clone.jpg)
 
+type below command to list the directory
+
+```bash
+cd Javawebapp
+```
+![clone](Assets/Images/clone.jpg)
+
+```bash
+ls -al
+```
+The above command should list the directory you have cloned.
+
