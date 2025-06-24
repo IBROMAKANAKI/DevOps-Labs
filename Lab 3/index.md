@@ -79,4 +79,19 @@ If you don't have an GitHub account, you need to create an account in github.com
   </a>
 </p>
 
+## Step 4 - Clone Repo locally
+Now click on the Cat icon on the top left to go back to repo you just created.
+Click on the repo you created in **step 1**, **click on Code, under SSH**
+
+![ssh-code](Assets/Images/ssh-code.jpg)
+
+
+**Copy the SSH url and go to your EC2 instance using git bash and perform below command:**
+
+```bash
+git clone <paste the ssh url >
+```
+**type yes to connect**
+
+![git-clone](Assets/Images/git clone.jpg)
 
