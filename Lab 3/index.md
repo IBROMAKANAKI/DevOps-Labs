@@ -107,3 +107,83 @@ ls -al
 ```
 The above command should list the directory you have cloned.
 
+## Step 5 - Create Java Web App using Maven
+use below maven command to create Java Web App using Maven. Maven is the build for creating and building java projects.
+
+```bash
+mvn archetype:generate -DgroupId=com.example.webapp \
+                       -DartifactId=my-webapp \
+                       -DarchetypeArtifactId=maven-archetype-webapp \
+                       -DinteractiveMode=false
+```
+
+![Build-code-webapp](Assets/Images/buid-webapp.jpg)
+
+## Step 6 - Push Java Web App using Git commands into GitHub
+
+type below command to see the new folder called MyWebApp
+
+```bash
+ls -al
+```
+![My-web](Lab 3/Assets/Images/my-web.jpg)
+
+**type  below command to see the newly created project in red**
+
+```bash
+git status
+```
+![Git=status](Assets/Images/Git-status.jpg)
+
+**Now add the newly created folder by executing below command:**
+
+```bash
+git add  *
+```
+**Now make sure all the files are moved to staging area, when you execute below command:**
+
+```bash
+git status
+```
+![Git-add](Assets/Images/git-add.jpg)
+
+**Create global username and email address**
+
+```bash
+git config --global user.name "your github user_id"
+git config --global user.email "youremailid"
+```
+![Git-email](Assets/Images/git-email.jpg)
+
+**Perform below command to commit the changes to local repository first.**
+```bash
+git commit -m "my first project check-in to GitHub"
+```
+![Git-commit](Assets/Images/Git-commit.jpg)
+
+**Now perform below command to push from local repository to remote repository.**
+
+```bash
+git push
+```
+![Git-push](Assets/Images/git-push.jpg)
+
+## Step 7 - Verify code changes in GitHub
+
+**Now to GitHub and click on the repo, you will see your commits.**
+
+<p align="center">
+  <strong>Step 1: Push to Repo </strong><br>
+  <a href="Assets/Images/Push 2.jpg" target="_blank">
+    <img src="Assets/Images/newssh-key.jpg" alt="Create-key" width="600" style="transition: transform .2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+  </a><br>
+  ⬇️
+</p>
+
+<p align="center">
+  <strong>Step 2: Repo </strong><br>
+  <a href="Assets/Images/push1.jpg" target="_blank">
+    <img src="Assets/Images/Paste-key.jpg" alt="Paste-key" width="600" style="transition: transform .2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+  </a>
+</p>
+
