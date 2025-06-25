@@ -126,7 +126,7 @@ type below command to see the new folder called MyWebApp
 ```bash
 ls -al
 ```
-![My-web](Lab 3/Assets/Images/my-web.jpg)
+![My-web](Assets/Images/my-web.jpg)
 
 **type  below command to see the newly created project in red**
 
@@ -175,7 +175,7 @@ git push
 <p align="center">
   <strong>Step 1: Push to Repo </strong><br>
   <a href="Assets/Images/Push 2.jpg" target="_blank">
-    <img src="Assets/Images/newssh-key.jpg" alt="Create-key" width="600" style="transition: transform .2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <img src="Assets/Images/Push 2.jpg" alt="Create-key" width="600" style="transition: transform .2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
   </a><br>
   ⬇️
 </p>
@@ -183,7 +183,7 @@ git push
 <p align="center">
   <strong>Step 2: Repo </strong><br>
   <a href="Assets/Images/push1.jpg" target="_blank">
-    <img src="Assets/Images/Paste-key.jpg" alt="Paste-key" width="600" style="transition: transform .2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+    <img src="Assets/Images/push1.jpg" alt="Paste-key" width="600" style="transition: transform .2s;" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
   </a>
 </p>
 
